@@ -1,0 +1,17 @@
+data_source {
+    gst_id: 1
+    gst_name: "gst_one"
+    gst_type: CAMERA
+    gst_path: "-1"
+    sink_name: "sink_one"
+    data_info: {
+        width: 640
+        height: 480
+        channel: 3
+        framerate: 30
+        format: "NV12"
+        decode: "h264"
+    }
+    neeed_calib : False
+    enable_ai : True
+}

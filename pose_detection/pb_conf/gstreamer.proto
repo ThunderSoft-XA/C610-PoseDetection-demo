@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package gstcfg;
+
+message DataInfo {
+    int32 width = 1;
+    int32 height = 2;
+    int32 channel = 3;
+    int32 framerate = 4;
+    string format = 5;
+    string decode = 6;
+}
+
+enum GstType {
+    LOCAL = 0;
+    CAMERA = 1;
+    RTSP = 2;
+}
+
+message DataSource {
+    int32 gst_id = 1;
+    string gst_name = 2;
+    GstType gst_type = 3;
+    string gst_path = 4;
+    string sink_name = 5;
+    DataInfo data_info = 6;
+    bool neeed_calib = 7;
+    bool enable_ai = 8;
+}
+
+message DataSourceSet {
+    repeated DataSource data_source = 1; //If you need more than one, you need this modifier "repeated"
+}
