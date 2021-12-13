@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "name": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${default}",
+        "/usr/include/c++/5/**",
+        "/usr/include/x86_64-linux-gnu/c++/5/**",
+        "/usr/include/c++/5/backward/**",
+        "/usr/lib/gcc/x86_64-linux-gnu/5/include/**",
+        "/usr/local/include/**",
+        "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/**",
+        "/usr/lib/x86_64-linux-gnu/glib-2.0/include/**",
+        "/usr/include/x86_64-linux-gnu/**",
+        "/usr/include/**",
+        "/usr/include/glib-2.0/**",
+        "/usr/include/gstreamer-1.0/**",
+        "/usr/include/gstreamer-1.0/gst/**",
+        "/usr/local/include/google/**"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++11",
+      "intelliSenseMode": "linux-gcc-x64",
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "/usr/local/include"
+        ],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "configurationProvider": "go2sh.cmake-tool",
+      "compilerArgs": []
+    }
+  ],
+  "version": 4
+}
